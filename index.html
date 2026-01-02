@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-     content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0">
     <title>Hrishikesh Nihal - Portfolio</title>
+
     <style>
-    
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -14,33 +14,17 @@
             line-height: 1.6;
         }
 
-        body.dark {
-            background-color: #121212;
-            color: #e0e0e0;
-        }
-        
-        body.dark header, 
-        body.dark footer, 
-        body.dark nav {
-            background-color: #1f1f1f;
-        }
-        
-        body.dark .card {
-            background-color: #1e1e1e;
-            color: #fff;
-            border: 1px solid #333;
-        }
         nav {
             background-color: #333;
             overflow: hidden;
-            text-align: center; 
-            white-space: nowrap; 
+            text-align: center;
+            white-space: nowrap;
         }
 
         nav a {
-            display: inline-block; 
+            display: inline-block;
             color: white;
-            padding: 14px 15px;  
+            padding: 14px 15px;
             text-decoration: none;
             font-weight: bold;
         }
@@ -49,7 +33,6 @@
             background-color: #555;
         }
 
-        /* Header Section */
         header {
             background-color: #fff;
             padding: 40px 20px;
@@ -59,7 +42,7 @@
 
         header h1 {
             margin: 0;
-            color: #2563eb; 
+            color: #2563eb;
         }
 
         img.profile-pic {
@@ -70,20 +53,9 @@
             margin-top: 15px;
         }
 
-        /* Theme Button */
-        button#themeToggle {
-            background-color: #2563eb;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-bottom: 10px;
-        }
-
         .container {
             max-width: 800px;
-            margin: 20px auto; 
+            margin: 20px auto;
             padding: 0 20px;
         }
 
@@ -97,14 +69,14 @@
             color: #2563eb;
         }
 
-      
         .card {
             background-color: white;
             padding: 20px;
             margin-bottom: 15px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
+
         ul.skills-list {
             list-style-type: none;
             padding: 0;
@@ -121,7 +93,6 @@
             font-size: 0.9rem;
         }
 
-        
         footer {
             background-color: #333;
             color: white;
@@ -130,99 +101,77 @@
             margin-top: 40px;
         }
 
-      
         @media (max-width: 600px) {
-            
             header h1 {
-                font-size: 1.5rem; 
+                font-size: 1.5rem;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <header>
-        <button id="themeToggle">🌙 Dark Mode</button>
-        <br>
-        <img src="profile.png" alt="Hrishikesh Profile" class="profile-pic">
-        <h1>Hrishikesh Sadanand Nihal</h1>
-        <p>Computer Engineering Student • Zeal COER, Pune</p>
-    </header>
+<header>
+    <img src="profile.png" alt="Hrishikesh Profile" class="profile-pic">
+    <h1>Hrishikesh Sadanand Nihal</h1>
+    <p>Computer Engineering Student • Zeal COER, Pune</p>
+</header>
 
-    <div class="container">
-        
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I am a first-year Computer Engineering student. I focus on writing clean code and learning how computers work from the ground up. I am currently learning C/C++ programming and basic Web Development.</p>
-        </section>
+<div class="container">
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>C Programming</li>
-          
-                <li>BASIC HTML</li>
-                <li>BASIC CSS</li>
-            </ul>
-        </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a first-year Computer Engineering student. I focus on writing clean code and learning how computers work from the ground up.</p>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            
-            <div class="card">
-                <h3>💻 Portfolio Website</h3>
-                <p>This personal website you are looking at! Built using HTML, CSS, and basic JavaScript to demonstrate front-end skills.</p>
-            </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>C Programming</li>
+            <li>Basic HTML</li>
+            <li>Basic CSS</li>
+        </ul>
+    </section>
 
-            <div class="card">
-                <h3>🧮 CLI Calculator</h3>
-                <p>A command-line tool built in Python that performs basic math operations. Focuses on clean code and logic.</p>
-            </div>
+    <section id="projects">
+        <h2>Projects</h2>
 
-            <div class="card">
-                <h3>🚦 Traffic Light System</h3>
-                <p>An Arduino project using LEDs to simulate a real-world traffic signal system with timing logic.<Br>
-<a href="">source</a></p>
-            </div>
-        </section>
+        <div class="card">
+            <h3>💻 Portfolio Website</h3>
+            <p>This personal website built using HTML and CSS.</p>
+        </div>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="card" style="text-align: center;">
-                <p>📧 Email: <b>nihalhrushikesh@gmail.com</b></p>
-                <p>contact:
- 9423274155</b></p>
-                <p>Feel free to reach out for collaboration or questions!</p>
-            </div>
-        </section>
+        <div class="card">
+            <h3>🧮 CLI Calculator</h3>
+            <p>A Python-based command-line calculator.</p>
+        </div>
 
-    </div>
+        <div class="card">
+            <h3>🚦 Traffic Light System</h3>
+            <p>Arduino project simulating traffic lights.</p>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Hrishikesh Nihal</p>
-    </footer>
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card" style="text-align: center;">
+            <p>📧 Email: <b>nihalhrushikesh@gmail.com</b></p>
+            <p>📞 Contact: 9423274155</p>
+        </div>
+    </section>
 
-    <script>
-        const button = document.getElementById('themeToggle');
-        const body = document.body;
+</div>
 
-        button.onclick = function() {
-            body.classList.toggle('dark');
-            
-            if (body.classList.contains('dark')) {
-                button.innerText = "☀️ Light Mode";
-            } else {
-                button.innerText = "🌙 Dark Mode";
-            }
-        };
-    </script>
+<footer>
+    <p>&copy; 2025 Hrishikesh Nihal</p>
+</footer>
 
 </body>
 </html>
